@@ -17,9 +17,20 @@ public class GreetingResource {
         if (name.equals("Fiuza")) {
             return "Hello " + name + "! Wellcome to the Java world!";
         } else if (name.equals("Gustavo")) {
-            return "Hello " + name + "!";
+            int i = 0;
+            String response = "";
+            for (i = 0;i < 5;i++) {
+                response = response + " " + name;
+            }
+            return "Hello " + response + "!";
         } else {
-            return "Olá " + name + "!";
+            int i = 0;
+            String response = "";
+            while (i < 6) {
+                response = response + " " + name;
+                i++;
+            }
+            return "Olá " + response + "!";
         }
     }
 
